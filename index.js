@@ -12,5 +12,10 @@ const tutorials = [
 ];
 
 const titleCased = () => {
+  for(sentence of tutorials){
+    for(word of sentence){
+      word.charAt(0).toupper;
+    }
+  }
   return tutorials
 }
