@@ -12,7 +12,7 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  tutorials.map(sentence.map(word=>word.replace(word.charAt(0),word.toUpperCase(charAt(0)))))
+  return tutorials.map(sentence.map(word=>word.replace(word.charAt(0),word.toUpperCase(charAt(0)))));
   // let newtutorials=[];
   // for(let sentence of tutorials){
   //   sentence=sentence.split(" ");
