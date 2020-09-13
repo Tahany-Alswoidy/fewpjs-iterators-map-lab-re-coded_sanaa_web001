@@ -12,9 +12,9 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  for(sentence of tutorials){
-    for(word of sentence){
-      word.charAt(0).toupper;
+  for(let sentence of tutorials){
+    for(let word of sentence){
+      toUpperCase(word.charAt(0));
     }
   }
   return tutorials
