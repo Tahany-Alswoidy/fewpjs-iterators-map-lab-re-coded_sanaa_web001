@@ -17,7 +17,7 @@ const titleCased = () => {
     sentence=sentence.split(" ");
     let newSentence="";
     for(let word of sentence){
-      newword=word.replace(word.charAt(0),toUpperCase(word.charAt(0)));
+      newword=word.replace(word.charAt(0),word.toUpperCase(word.charAt(0)));
       newSentence+=newword+" ";
     }
     newtutorials.push(newSentence);
