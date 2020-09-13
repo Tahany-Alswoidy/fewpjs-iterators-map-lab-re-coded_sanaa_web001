@@ -12,12 +12,16 @@ const tutorials = [
 ];
 
 const titleCased = () => {
+  let newtutorials=[];
   for(let sentence of tutorials){
     sentence=sentence.split(" ");
+    let newSentence="";
     for(let word of sentence){
       newword=word.replace(word.charAt(0),toUpperCase(word.charAt(0)));
-      newSentence+=word
+      newSentence+=newword+" ";
     }
+    newtutorials.push(newSentence);
   }
+  tutorials=newtutorials;
   return tutorials
 }
