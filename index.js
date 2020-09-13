@@ -12,16 +12,17 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  let newtutorials=[];
-  for(let sentence of tutorials){
-    sentence=sentence.split(" ");
-    let newSentence="";
-    for(let word of sentence){
-      let newword=word.replace(word.charAt(0),word.toUpperCase(word.charAt(0)));
-      newSentence+=newword+" ";
-    }
-    newtutorials.push(newSentence);
-  }
-  newtutorials;
+  tutorials.map(sentence.map(word=>word.replace(word.charAt(0),word.toUpperCase(charAt(0)))))
+  // let newtutorials=[];
+  // for(let sentence of tutorials){
+  //   sentence=sentence.split(" ");
+  //   let newSentence="";
+  //   for(let word of sentence){
+  //     let newword=word.replace(word.charAt(0),word.toUpperCase(word.charAt(0)));
+  //     newSentence+=newword+" ";
+  //   }
+  //   newtutorials.push(newSentence);
+  // }
+  // newtutorials;
   return newtutorials
 }
