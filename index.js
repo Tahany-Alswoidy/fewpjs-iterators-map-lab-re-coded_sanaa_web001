@@ -15,7 +15,7 @@ const titleCased = () => {
   for(let sentence of tutorials){
     sentence=sentence.split(" ");
     for(let word of sentence){
-      word=toUpperCase(word.charAt(0));
+      newword=word.replace(word.charAt(0),toUpper);
       newSentence+=word
     }
   }
