@@ -22,6 +22,6 @@ const titleCased = () => {
     }
     newtutorials.push(newSentence);
   }
-  tutorials=newtutorials;
-  return tutorials
+  newtutorials;
+  return newtutorials
 }
