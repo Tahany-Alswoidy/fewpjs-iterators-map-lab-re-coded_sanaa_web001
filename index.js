@@ -14,7 +14,7 @@ const tutorials = [
 const titleCased = () => {
   for(let sentence of tutorials){
     for(let word of sentence){
-      toUpperCase(word.charAt(0));
+      word.toUpperCase(word.charAt(0));
     }
   }
   return tutorials
